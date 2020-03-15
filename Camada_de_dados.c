@@ -28,15 +28,3 @@ return estado -> num_jogadas;
 CASA obter_estado_casa(ESTADO *e, COORDENADA c){
 return e -> tab[c.coluna][c.linha];
 }
-
-/**
-
-CASA obter_casa(ESTADO *e,int x,int y){
-return e->tab[x][y];
-}
-
-COORDENADA obter_ultima_jogada(ESTADO *e){
-return e->ultima_jogada;
-}
-
-*/
