@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 ESTADO *inicializar_estado() {
-    ESTADO *p = (ESTADO *) malloc(sizeof(ESTADO));
+    ESTADO *e= (ESTADO *) malloc(sizeof(ESTADO));
     int x,y;
     for (y=0; y<8; y++) {
         for (x=0; x<8; x++) {
@@ -10,10 +10,10 @@ ESTADO *inicializar_estado() {
             else p -> tab[x][y] = VAZIO;
         }
     }
-    p -> ultima_jogada.linha = 4;
-    p -> ultima_jogada.coluna = 3;
-    p -> num_jogadas = 0;
-    p -> jogador_atual = 1;
+    e -> ultima_jogada.linha = 4;
+    e -> ultima_jogada.coluna = 3;
+    e -> num_jogadas = 0;
+    e -> jogador_atual = 1;
     return p;
 }
 
